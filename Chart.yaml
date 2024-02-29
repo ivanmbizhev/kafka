@@ -1,0 +1,10 @@
+apiVersion: v2
+appVersion: 2.0.0
+description: Custom Kafka chart with Kraft
+kubeVersion: '>=v1.25'
+name: kafka-stack
+version: 2.0.0
+dependencies:
+  - name: strimzi-kafka-operator
+    version: 0.1.1
+    repository: oci://registry-1.docker.io/highball

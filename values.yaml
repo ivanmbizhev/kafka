@@ -1,0 +1,9 @@
+kafka: 
+  name: my-cluster
+
+dashboards:
+  enabled: true
+  namespace: monitoring
+featureGates: +UseKRaft,+KafkaNodePools,+UnidirectionalTopicOperator
+strimzi-kafka-operator:
+  watchAnyNamespace: true

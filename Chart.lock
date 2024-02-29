@@ -1,0 +1,6 @@
+dependencies:
+- name: strimzi-kafka-operator
+  repository: oci://registry-1.docker.io/highball
+  version: 0.1.1
+digest: sha256:f9d8a2206ccde4b6ff17805cca6a3e977310b3920ba278b5b02bc32c127808cf
+generated: "2024-02-29T10:55:46.677444+02:00"

@@ -20,12 +20,11 @@ spec:
   template:
     pod:
       affinity:
-        podAntiAffinity: # (3)
+        nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchExpressions:
-                  - key: strimzi.io/name
-                    operator: In
-                    values:
-                      - my-cluster-kafka
-              topologyKey: "kubernetes.io/hostname" # (4)
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: minikube.k8s.io/primary
+                operator: In
+                values:
+                - "true"

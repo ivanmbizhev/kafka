@@ -28,7 +28,8 @@ spec:
         port: 9093
         type: internal
         tls: true
-    version: 3.6.0
+    version: 3.6.1
+    metadataVersion: 3.6-IV2
     replicas: 3
     metricsConfig: # (3)
       type: jmxPrometheusExporter

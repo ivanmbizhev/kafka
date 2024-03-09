@@ -1,9 +1,17 @@
 kafka: 
   name: my-cluster
 
-dashboards:
-  enabled: true
-  namespace: monitoring
-featureGates: +UseKRaft,+KafkaNodePools,+UnidirectionalTopicOperator
 strimzi-kafka-operator:
-  watchAnyNamespace: true
+  dashboards:
+    enabled: true
+    namespace: monitoring
+  featureGates: +UseKRaft,+KafkaNodePools,+UnidirectionalTopicOperator
+  strimzi-kafka-operator:
+    watchAnyNamespace: true
+  kafka:
+    limits:
+      memory: 1G
+      cpu: 300m
+    requests:
+      memory: 384Mi
+      cpu: 200m

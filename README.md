@@ -1,0 +1,1 @@
+Strimzi kafka operator with Kafka Kraft controller used. Requires a minimum of three nodes with 4Gb of memory to be used. Kafka with Kraft operated by Strimzi is still in alpha phase as per their documentation.
